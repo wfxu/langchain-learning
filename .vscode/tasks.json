@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "openTerminalInCurrentFileDirectory",
+        "type": "shell",
+        "command": "Start-Process -FilePath 'powershell.exe' -WorkingDirectory '${fileDirname}'",
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "problemMatcher": [],
+        "windows": {
+          "command": "Start-Process -FilePath 'powershell.exe' -WorkingDirectory '${fileDirname}'"
+        }
+      }
+    ]
+  }
+  
